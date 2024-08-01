@@ -8,7 +8,7 @@
       inputs.flake-utils.follows = "flake-utils";
     };
     melange = {
-      url = "github:melange-re/melange/refs/tags/4.0.0-414";
+      url = "github:melange-re/melange/refs/tags/4.0.0-51";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
