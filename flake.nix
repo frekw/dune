@@ -217,7 +217,8 @@
           coq =
             pkgs.mkShell {
               nativeBuildInputs = testNativeBuildInputs;
-              inputsFrom = [ pkgs.dune_3 ];
+              # Coq requires OCaml 4.x
+              inputsFrom = [ pkgs.ocaml-ng.ocamlPackages_4_14.dune_3 ];
               buildInputs = with pkgs; [
                 coq_8_16_native
                 coq_8_16_native.ocamlPackages.findlib
